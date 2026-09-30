@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Learn</span>
+    <span class="course">ENG 101 · Composition I (Fall 2026)</span>
+  </header>
+
+  <main>
+    <nav class="crumbs"><a href="/">Grade Center</a> › Edit rubric &amp; instructions</nav>
+
+    <section class="toolbar">
+      <div>
+        <h1>Edit rubric &amp; instructions</h1>
+        <p class="muted">Changes apply to the next grading run. Existing grades are kept and marked “Outdated”.</p>
+      </div>
+    </section>
+    <p id="message" class="message" hidden></p>
+    <p id="saved" class="notice success" hidden></p>
+
+    <form id="form" class="panel form" novalidate>
+      <label class="field">
+        <span>Title</span>
+        <input id="title" maxlength="200" required>
+      </label>
+
+      <label class="field">
+        <span>Instructions (shown to students and to the grading agent)</span>
+        <textarea id="prompt" rows="5" maxlength="5000" required></textarea>
+      </label>
+
+      <div class="field-row">
+        <label class="field">
+          <span>Deadline (your local time)</span>
+          <input id="deadline" type="datetime-local" required>
+        </label>
+      </div>
+
+      <h2 class="section-title">Rubric <span id="total" class="muted"></span></h2>
+      <p class="muted small-text">Qualities judged across the whole submission (e.g. thesis, clarity). Optional when there is an answer key.</p>
+      <div class="table-wrap">
+        <table class="rubric-editor">
+          <thead><tr><th>Criterion</th><th>Max points</th><th>What earns the points</th><th></th></tr></thead>
+          <tbody id="criteria"></tbody>
+        </table>
+      </div>
+      <button type="button" id="add" class="secondary small">Add criterion</button>
+
+      <h2 class="section-title">Answer key (optional)</h2>
+      <p class="muted small-text">For questions with specific answers. The agent checks each final answer and, if you
+        describe one, the method of work. Students see the questions and points, never the answers or methods.</p>
+      <div class="table-wrap">
+        <table class="rubric-editor key-editor">
+          <thead><tr><th>Question</th><th>Max points</th><th>Expected answer</th><th>Required method (optional)</th><th></th></tr></thead>
+          <tbody id="questions"></tbody>
+        </table>
+      </div>
+      <button type="button" id="add-question" class="secondary small">Add question</button>
+
+      <div class="actions form-actions">
+        <button type="submit" id="save">Save changes</button>
+        <a href="/">Back to Grade Center</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="assignment.js"></script>
+</body>
+</html>

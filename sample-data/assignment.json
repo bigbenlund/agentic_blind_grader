@@ -1,0 +1,12 @@
+{
+  "title": "Essay 1: Should cities ban cars from downtown cores?",
+  "prompt": "Write a 400-700 word argumentative essay taking a clear position on whether mid-sized cities should ban private cars from their downtown cores. Support your position with evidence and address at least one counterargument.",
+  "deadline": "2026-09-21T03:59:00Z",
+  "rubric": [
+    { "criterion": "Thesis", "maxPoints": 20, "description": "Clear, arguable position stated early and maintained throughout." },
+    { "criterion": "Evidence", "maxPoints": 30, "description": "Specific, relevant, credible support for each claim." },
+    { "criterion": "Counterargument", "maxPoints": 20, "description": "Fairly presents at least one opposing view and rebuts it." },
+    { "criterion": "Organization", "maxPoints": 15, "description": "Logical structure, paragraphs with clear focus, effective transitions." },
+    { "criterion": "Mechanics", "maxPoints": 15, "description": "Grammar, spelling, punctuation, and word count within range." }
+  ]
+}

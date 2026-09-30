@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submission</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Learn</span>
+    <span class="course">ENG 101 · Composition I (Fall 2026)</span>
+  </header>
+
+  <main>
+    <nav class="crumbs"><a href="/">Grade Center</a> › <span id="crumb-name">Submission</span></nav>
+
+    <section class="toolbar">
+      <div>
+        <h1 id="name">Loading…</h1>
+        <p id="meta" class="muted"></p>
+      </div>
+      <div class="actions">
+        <span id="status"></span>
+        <button id="grade" hidden>Grade with agent</button>
+      </div>
+    </section>
+    <p id="message" class="message" hidden></p>
+
+    <div class="submission-layout">
+      <section class="panel">
+        <h2>Submission</h2>
+        <p id="file" class="muted"></p>
+        <div id="essay"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Grading</h2>
+        <div id="grading"></div>
+      </section>
+    </div>
+
+    <section class="panel" id="agent-panel" hidden>
+      <details>
+        <summary><h2>What the agent saw</h2></summary>
+        <p class="muted">The exact payload sent to the grading agent. No name, email, or student ID.</p>
+        <pre id="agent-view" class="agent-view"></pre>
+      </details>
+    </section>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="submission.js"></script>
+</body>
+</html>

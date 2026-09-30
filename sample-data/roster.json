@@ -1,0 +1,11 @@
+[
+  {"role": "teacher", "firstName": "Elena", "lastName": "Reyes", "email": "ereyes@stateu.edu"},
+  {"studentId": "800123401", "firstName": "Maya", "lastName": "Chen", "email": "maya.chen@stateu.edu"},
+  {"studentId": "800123402", "firstName": "Jordan", "lastName": "Alvarez", "email": "jalvarez7@stateu.edu"},
+  {"studentId": "800123403", "firstName": "Priya", "lastName": "Patel", "email": "priya.patel@stateu.edu"},
+  {"studentId": "800123404", "firstName": "Liam", "lastName": "O'Brien", "email": "lobrien@stateu.edu"},
+  {"studentId": "800123405", "firstName": "Grace", "lastName": "Kim", "email": "grace.kim@stateu.edu"},
+  {"studentId": "800123406", "firstName": "Will", "lastName": "Turner", "email": "wturner@stateu.edu"},
+  {"studentId": "800123407", "firstName": "Aisha", "lastName": "Mohammed", "email": "aisha.mohammed@stateu.edu"},
+  {"studentId": "800123408", "firstName": "Noah", "lastName": "Brooks", "email": "nbrooks@stateu.edu", "studentView": true}
+]

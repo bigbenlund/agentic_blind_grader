@@ -1,0 +1,22 @@
+{
+  "name": "blind-essay-grader",
+  "version": "1.0.0",
+  "main": "server.mjs",
+  "description": "Mock Blackboard Grade Center with an essay-grading agent that never sees student identifiers.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.283",
+    "@napi-rs/canvas": "^0.1.80",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "@xmldom/xmldom": "^0.9.12",
+    "jszip": "^3.10.2",
+    "mammoth": "^1.12.3",
+    "pdf-parse": "^2.4.5",
+    "tesseract.js": "^7.0.0"
+  }
+}

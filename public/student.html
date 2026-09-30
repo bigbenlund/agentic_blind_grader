@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Learn</span>
+    <span class="course">ENG 101 · Composition I (Fall 2026)</span>
+    <span class="topbar-who" id="who"></span>
+    <a class="topbar-link" id="teacher-view" href="/">Teacher view</a>
+  </header>
+
+  <main class="narrow">
+    <nav class="crumbs">Course Content › Assignments</nav>
+
+    <section class="toolbar">
+      <div>
+        <h1 id="title">Loading…</h1>
+        <p id="due" class="muted"></p>
+      </div>
+      <span id="status"></span>
+    </section>
+    <p id="message" class="message" hidden></p>
+
+    <section class="panel">
+      <h2>Instructions</h2>
+      <p id="prompt" class="prewrap"></p>
+      <div id="rubric-section">
+        <h3>Rubric</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Criterion</th><th>Points</th><th>What earns the points</th></tr></thead>
+            <tbody id="rubric"></tbody>
+          </table>
+        </div>
+      </div>
+      <div id="questions-section">
+        <h3>Questions</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Question</th><th>Points</th></tr></thead>
+            <tbody id="questions"></tbody>
+          </table>
+        </div>
+        <p class="muted small-text">Show your work: answers are checked for the method as well as the result.</p>
+      </div>
+    </section>
+
+    <section class="panel" id="grade-panel" hidden>
+      <h2>Your grade</h2>
+      <div id="grade"></div>
+    </section>
+
+    <section class="panel" id="submission-panel" hidden>
+      <h2>Your submission</h2>
+      <p id="submitted-meta" class="muted"></p>
+      <div id="essay"></div>
+    </section>
+
+    <section class="panel">
+      <h2 id="form-title">Submit your work</h2>
+      <form id="form">
+        <div class="tabs" role="tablist">
+          <button type="button" class="tab active" data-mode="text" role="tab">Write / paste</button>
+          <button type="button" class="tab" data-mode="file" role="tab">Upload file</button>
+        </div>
+        <div data-pane="text">
+          <textarea id="text" rows="14" placeholder="Paste or type your submission here"></textarea>
+          <p id="word-count" class="muted small-text"></p>
+        </div>
+        <div data-pane="file" hidden>
+          <input id="upload" type="file" accept=".txt,.md,.docx,.doc,.pdf,.pptx,.ppt,.png,.jpg,.jpeg">
+          <p class="muted small-text">Text (.txt, .md), Word (.docx, .doc), PDF, PowerPoint (.pptx, .ppt), or a photo/scan (.png, .jpg, .jpeg), up to 15 MB.</p>
+        </div>
+        <div class="actions form-actions">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="student.js"></script>
+</body>
+</html>

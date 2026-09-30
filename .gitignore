@@ -1,0 +1,6 @@
+node_modules/
+# Live roster, submissions and grades: real student data. Seeded from sample-data/ on first run.
+data/
+.env*
+.claude/settings.local.json
+.DS_Store

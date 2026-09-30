@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit Roster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Learn</span>
+    <span class="course">ENG 101 · Composition I (Fall 2026)</span>
+  </header>
+
+  <main>
+    <nav class="crumbs"><a href="/">Grade Center</a> › Edit roster</nav>
+
+    <section class="toolbar">
+      <div>
+        <h1>Edit roster</h1>
+        <p class="muted">Everyone listed here, teacher included, has their name, email and ID removed before a submission reaches the grading agent.</p>
+      </div>
+    </section>
+    <p id="message" class="message" hidden></p>
+    <p id="saved" class="notice success" hidden></p>
+
+    <form id="form" class="panel form" novalidate>
+      <h2 class="section-title">Teacher</h2>
+      <div class="field-row">
+        <label class="field"><span>First name</span><input id="t-first" maxlength="60" required></label>
+        <label class="field"><span>Last name</span><input id="t-last" maxlength="60" required></label>
+        <label class="field"><span>Email</span><input id="t-email" type="email" maxlength="254" required></label>
+      </div>
+
+      <h2 class="section-title">Students <span id="count" class="muted"></span></h2>
+      <p class="muted small-text">Changing a student ID moves their submission and grade with it. Removing a student deletes theirs.
+        “Student view” picks who the switcher in the top bar opens.</p>
+      <div class="table-wrap">
+        <table class="rubric-editor roster-editor">
+          <thead><tr><th>First name</th><th>Last name</th><th>Email</th><th>Student ID</th><th>Student view</th><th></th></tr></thead>
+          <tbody id="students"></tbody>
+        </table>
+      </div>
+      <button type="button" id="add" class="secondary small">Add student</button>
+
+      <div class="actions form-actions">
+        <button type="submit" id="save">Save roster</button>
+        <a href="/">Back to Grade Center</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="roster.js"></script>
+</body>
+</html>
