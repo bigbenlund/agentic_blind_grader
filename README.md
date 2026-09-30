@@ -1,6 +1,6 @@
 # Blind Essay Grader
 
-A mock Blackboard Grade Center where a Claude agent suggests grades for student submissions without ever seeing who wrote them. Names, emails and student IDs are redacted before the agent sees the text, and the teacher reviews and approves every grade.
+A mock Grade Center where Claude agents suggest grades for student submissions without ever seeing who wrote them, based on a rubric/answer key. An agent is spawned for each assignment, respectively. All PII is redacted before an agent sees an assignment, and the teacher must review and approves every grade.
 
 ## Setup
 
